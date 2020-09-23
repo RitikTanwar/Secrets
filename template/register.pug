@@ -1,0 +1,24 @@
+include ../template/header.pug
+.container.mt-5
+  h1 Register
+  .row
+    .col-sm-8
+      .card
+        .card-body
+          // Makes POST request to /register route
+          form(action='/register', method='POST')
+            .form-group
+              label(for='email') Email
+              input.form-control(type='email', name='username')
+            .form-group
+              label(for='password') Password
+              input.form-control(type='password', name='password')
+            button(type='submit',class="btn btn-dark") Register
+    .col-sm-4
+      .card.social-block
+        .card-body
+          a.btn.btn-block(href='/auth/google', role='button')
+            i.fab.fa-google
+            |             Sign Up with Google
+
+include ../template/footer.pug

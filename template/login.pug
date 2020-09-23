@@ -1,0 +1,21 @@
+include ../template/header.pug
+div.container.mt-5
+  h1 Login
+  div.row
+    div.col-sm-8
+        div.card
+            div.card-body
+            form(action="/login",method="POST")
+                div.form-group
+                    label(for="email") Email
+                    input(type="email",class="form-control",name="username")
+                div.form-group
+                    label(for="password") Password
+                    input(type="password",class="form-control",name="password")
+                button(type="submit",class="btn btn-dark") Login
+        //- <!-- <div class="col-sm-4">
+    div.card
+        div.card-body
+            a(class="btn btn-block",href="/auth/google",role="button")
+                i.fab.fa-google Sign In with Google
+include footer.pug

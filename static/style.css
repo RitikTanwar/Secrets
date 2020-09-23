@@ -1,0 +1,21 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #E8ECEF;
+}
+.display-3{
+    font-weight: bolder;
+    letter-spacing: 5px;
+}  
+.centered {
+      padding-top: 200px;
+      text-align: center;
+  }
+  
+.secret-text {
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+    background-color: #000;
+  }
+  
