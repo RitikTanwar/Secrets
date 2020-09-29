@@ -17,8 +17,11 @@ include ../template/header.pug
     .col-sm-4
       .card.social-block
         .card-body
-          a.btn.btn-block(href='/auth/google', role='button')
+          a.btn.btn-block.btn-google(href='/auth/google', role='button')
             i.fab.fa-google
             |             Sign Up with Google
+        .card-body
+          a.btn.btn-block.btn-facebook(href='/auth/facebook', role='button')
+            i.fab.fa-google Sign Up with Facebook
 
 include ../template/footer.pug
